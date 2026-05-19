@@ -1,0 +1,9 @@
+{
+  "name": "Tarid",
+  "short_name": "Tarid",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0162B7",
+  "icons": []
+}
