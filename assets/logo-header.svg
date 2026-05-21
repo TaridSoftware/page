@@ -1,12 +1,14 @@
 <svg width="340" height="80" viewBox="0 0 340 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(10,10)">
-    <rect x="15" y="15" width="40" height="40" rx="8"
-      transform="rotate(45 35 35)"
-      stroke="#0162B7" stroke-width="8" fill="none"/>
-
+    <!-- Back / accent -->
     <rect x="0" y="0" width="40" height="40" rx="8"
       transform="rotate(45 20 20)"
       stroke="#2563EB" stroke-width="8" fill="none"/>
+
+    <!-- Front / primary -->
+    <rect x="15" y="15" width="40" height="40" rx="8"
+      transform="rotate(45 35 35)"
+      stroke="#0162B7" stroke-width="8" fill="none"/>
   </g>
 
   <text x="90" y="50"
