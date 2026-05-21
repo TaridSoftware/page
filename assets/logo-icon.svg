@@ -1,9 +1,0 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="35" y="35" width="50" height="50" rx="10"
-    transform="rotate(45 60 60)"
-    stroke="#0162B7" stroke-width="10" fill="none"/>
-
-  <rect x="15" y="15" width="50" height="50" rx="10"
-    transform="rotate(45 40 40)"
-    stroke="#2563EB" stroke-width="10" fill="none"/>
-</svg>
