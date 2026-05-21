@@ -1,237 +1,875 @@
-<!-- Canonical -->
-<link rel="canonical" href="https://tarid.uk/" />
-
-<!-- Primary Meta -->
-<meta name="title" content="Tarid — Identity Orchestration for Modern SMBs" />
-<meta name="description" content="Tarid keeps identities consistent across Google Workspace, Microsoft 365, Entra ID and your SaaS stack. A practical identity orchestration and governance layer for modern SMBs." />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tarid.uk/" />
-<meta property="og:title" content="Tarid — Identity Orchestration for Modern SMBs" />
-<meta property="og:description" content="Tarid connects your identity providers, reconciles identity drift, and makes onboarding and access changes safe, reviewable and consistent." />
-<meta property="og:image" content="https://tarid.uk/og-image.png" />
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
 <meta property="og:site_name" content="Tarid" />
+<meta name="twitter:site" content="@tarid" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0162B7" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Tarid — Identity Orchestration for Modern SMBs" />
-<meta name="twitter:description" content="Identity orchestration and governance for teams using Google Workspace, Microsoft 365, Entra ID and SaaS tools." />
-<meta name="twitter:image" content="https://tarid.uk/og-image.png" />
+<title>Tarid – Identity Orchestration & Governance for Modern SMBs</title>
+<meta name="description" content="Tarid is an integration-first identity orchestration and governance layer for SMBs. Connect Google Workspace, Microsoft Entra ID, and SaaS tools to reconcile identity drift, automate onboarding, and enforce policy-driven access consistency." />
 
-<!-- Icons / manifest -->
+<link rel="canonical" href="https://tarid.uk" />
 <link rel="icon" href="/favicon.ico" />
 <link rel="manifest" href="/manifest.json" />
+<link rel="alternate" hreflang="en-GB" href="https://tarid.uk/" />
 
-<!-- JSON-LD -->
+<meta property="og:title" content="Tarid – Identity Orchestration & Governance for Modern SMBs" />
+<meta property="og:description" content="Tarid helps SMBs orchestrate identity across Google Workspace, Microsoft Entra ID, and SaaS platforms with policy-driven automation and human-reviewed controls." />
+<meta property="og:url" content="https://tarid.uk" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://tarid.uk/og-image.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tarid – Identity Orchestration & Governance for Modern SMBs" />
+<meta name="twitter:description" content="Identity orchestration, onboarding, and governance for SMBs using Google Workspace, Microsoft Entra ID, and SaaS platforms." />
+<meta name="twitter:image" content="https://tarid.uk/og-image.png" />
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Tarid",
   "url": "https://tarid.uk",
-  "logo": "https://tarid.uk/logo-tarid.svg",
-  "description": "Tarid is an identity orchestration and governance layer for modern SMBs.",
+  "logo": "https://tarid.uk/logo.png",
+  "description": "Tarid is a UK-based identity orchestration and governance platform for SMBs. Tarid connects existing identity systems, reconciles identity drift, and automates onboarding and access governance across SaaS environments.",
   "sameAs": [
-    "https://github.com/tarid"
+    "https://github.com/coppercoder-cmd"
   ]
 }
 </script>
 
-  <div class="topbar">
-    <div class="topbar-inner">
-      <span>Identity orchestration for modern SMBs.</span>
-      <span>United Kingdom</span>
-    </div>
-  </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tarid",
+  "url": "https://tarid.uk",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tarid.uk/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
-  <header class="site-header">
-    <div class="nav-inner">
-      <a href="/" class="logo-wrap">
-        <!-- swap src for your real logo -->
-        <img src="/logo-tarid.svg" alt="Tarid logo" />
-        <span class="logo-text">Tarid</span>
-      </a>
-      <nav class="main-nav">
-        <a href="/product">Product</a>
-        <a href="/solutions">Solutions</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/security">Security</a>
-        <a href="/contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="/contact" class="btn-outline">Request a walkthrough</a>
-        <a href="/contact" class="btn-primary">Get started</a>
-      </div>
-    </div>
-  </header>
+<style>
+:root {
+    --primary: #0162B7;
+    --secondary: #1E293B;
+    --neutral-900: #0F172A;
+    --neutral-700: #334155;
+    --neutral-500: #64748B;
+    --neutral-300: #CBD5E1;
+    --neutral-150: #E5EAF2;
+    --neutral-100: #F1F5F9;
+    --white: #FFFFFF;
+}
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">Identity orchestration &amp; governance</p>
-          <h1>Keep identities consistent across Google Workspace, Microsoft 365, Entra ID, and your SaaS stack.</h1>
-          <p>
-            Tarid is an identity orchestration layer for small and mid‑sized organisations. It connects the identity
-            systems you already use, reconciles identity drift, and makes onboarding and access changes safe,
-            reviewable, and consistent.
-          </p>
-          <div class="hero-ctas">
-            <a href="/product" class="btn-primary">See how Tarid works</a>
-            <a href="/contact" class="btn-ghost">Talk to us</a>
-          </div>
-          <p class="hero-footnote">
-            Built for organisations that need reliable identity governance without enterprise IAM complexity.
-          </p>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--neutral-100);
+    color: var(--neutral-900);
+    line-height: 1.6;
+}
+
+.topbar {
+    background-color: var(--neutral-900);
+    color: var(--neutral-100);
+    font-size: 0.8rem;
+    padding: 0.4rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left span {
+    opacity: 0.9;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--neutral-300);
+    padding: 0.9rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--primary);
+    letter-spacing: 0.03em;
+}
+
+nav .nav-main {
+    display: flex;
+    gap: 1.8rem;
+    font-size: 0.9rem;
+}
+
+nav .nav-main a {
+    text-decoration: none;
+    color: var(--neutral-700);
+    font-weight: 500;
+}
+
+nav .nav-main a:hover {
+    color: var(--primary);
+}
+
+nav .nav-actions {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+nav .nav-actions a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: var(--neutral-700);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.nav-btn {
+    padding: 0.45rem 0.9rem;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+}
+
+.nav-btn.primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.nav-btn.primary:hover {
+    background-color: #004a8a;
+}
+
+.nav-btn.outline {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.nav-btn.outline:hover {
+    background-color: var(--neutral-150);
+}
+
+.hero {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.hero-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-kicker {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: var(--neutral-500);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+}
+
+.hero-sub {
+    font-size: 1.05rem;
+    color: var(--neutral-700);
+    max-width: 38rem;
+    margin-bottom: 1.6rem;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-cta a.primary-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.8rem 1.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.hero-cta a.primary-btn:hover {
+    background-color: #004a8a;
+}
+
+.hero-cta a.secondary-btn {
+    border: 1px solid var(--neutral-300);
+    color: var(--neutral-700);
+    padding: 0.8rem 1.4rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background-color: var(--white);
+}
+
+.hero-cta a.secondary-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.hero-footnote {
+    font-size: 0.8rem;
+    color: var(--neutral-500);
+}
+
+.hero-panel {
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+    border-radius: 6px;
+    padding: 1.4rem;
+}
+
+.hero-panel-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--neutral-700);
+    margin-bottom: 0.75rem;
+}
+
+.hero-metric {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--neutral-700);
+}
+
+.hero-metric span.value {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+}
+
+section h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+.section-subtitle {
+    font-size: 0.95rem;
+    color: var(--neutral-500);
+    margin-bottom: 2rem;
+}
+
+.value-grid,
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+}
+
+.value-card,
+.pillar {
+    background-color: var(--white);
+    border-radius: 6px;
+    border: 1px solid var(--neutral-300);
+    padding: 1.4rem;
+}
+
+.value-title,
+.pillar-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+.value-body,
+.pillar-body {
+    font-size: 0.95rem;
+    color: var(--neutral-700);
+}
+
+.pillar-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--neutral-500);
+    margin-bottom: 0.4rem;
+}
+
+.resources-band {
+    background-color: var(--white);
+    border-top: 1px solid var(--neutral-300);
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.resources-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+}
+
+.resource-block-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+.resource-link {
+    font-size: 0.9rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--neutral-900);
+    color: var(--neutral-100);
+    padding: 2rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+.footer-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 2rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+}
+
+.footer-links div span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--neutral-150);
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    max-width: 1120px;
+    margin: 1.5rem auto 0;
+    border-top: 1px solid #1f2937;
+    padding-top: 0.8rem;
+    color: var(--neutral-500);
+}
+
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    nav {
+        padding: 0.8rem 1.2rem;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+
+    .topbar {
+        padding: 0.4rem 1.2rem;
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-start;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="topbar-left">
+        <span>Identity orchestration for modern SMBs.</span>
+    </div>
+    <div class="topbar-right">
+        <span>United Kingdom</span>
+    </div>
+</div>
+
+<nav>
+    <div class="logo">Tarid</div>
+
+    <div class="nav-main">
+        <a href="#product">Platform</a>
+        <a href="#solutions">Capabilities</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#company">Company</a>
+    </div>
+
+    <div class="nav-actions">
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-btn outline">Request a walkthrough</a>
+        <a href="#contact" class="nav-btn primary">Get started</a>
+    </div>
+</nav>
+
+<section class="hero" id="hero">
+    <div class="hero-inner">
+
+        <div>
+            <div class="hero-kicker">
+                Identity orchestration & governance
+            </div>
+
+            <h1>
+                Keep identity consistent across Google Workspace, Microsoft Entra ID, and your SaaS stack.
+            </h1>
+
+            <p class="hero-sub">
+                Tarid is an integration-first identity orchestration and governance layer built for SMBs. 
+                Connect your existing identity systems, reconcile identity drift, automate onboarding safely, 
+                and enforce policy-driven access consistency without replacing the tools you already use.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#contact" class="primary-btn">
+                    Request a platform walkthrough
+                </a>
+
+                <a href="#product" class="secondary-btn">
+                    Explore the platform
+                </a>
+            </div>
+
+            <div class="hero-footnote">
+                Built for organisations that need reliable identity governance without enterprise IAM complexity.
+            </div>
         </div>
 
-        <aside class="identity-map">
-          <h2 class="identity-map-title">Identity across your organisation</h2>
-          <div class="identity-map-inner">
-            <!-- center identity -->
-            <div class="identity-node identity-node--center">
-              <span>Employee identity</span>
+        <aside class="hero-panel">
+            <div class="hero-panel-title">
+                What Tarid does
             </div>
 
-            <!-- apps -->
-            <div class="identity-node identity-node--google">
-              <span>Google Workspace</span>
-            </div>
-            <div class="identity-node identity-node--entra">
-              <span>Microsoft Entra ID</span>
-            </div>
-            <div class="identity-node identity-node--m365">
-              <span>Microsoft 365</span>
-            </div>
-            <div class="identity-node identity-node--slack">
-              <span>Slack</span>
-            </div>
-            <div class="identity-node identity-node--github">
-              <span>GitHub</span>
-            </div>
-            <div class="identity-node identity-node--other">
-              <span>Other SaaS apps</span>
+            <div class="hero-metric">
+                <span>Reconcile identity drift</span>
+                <span class="value">Across systems</span>
             </div>
 
-            <!-- lines -->
-            <div class="identity-line identity-line--google"></div>
-            <div class="identity-line identity-line--entra"></div>
-            <div class="identity-line identity-line--m365"></div>
-            <div class="identity-line identity-line--slack"></div>
-            <div class="identity-line identity-line--github"></div>
-            <div class="identity-line identity-line--other"></div>
-          </div>
+            <div class="hero-metric">
+                <span>Policy enforcement</span>
+                <span class="value">Consistent access</span>
+            </div>
+
+            <div class="hero-metric">
+                <span>Automation approach</span>
+                <span class="value">Safe + reviewable</span>
+            </div>
         </aside>
-      </div>
-    </section>
 
-    <!-- Why Tarid exists -->
-    <section class="section">
-      <div class="container">
-        <h2>Why identity orchestration matters for SMBs</h2>
-        <p>
-          Most growing teams end up with identities scattered across Google Workspace, Microsoft 365, Entra ID
-          and a long list of SaaS tools. Accounts don’t match, access is granted ad‑hoc, and offboarding is manual.
-          Tarid gives you a practical way to keep identities aligned, access predictable, and changes auditable—
-          without rebuilding your stack.
-        </p>
-        <div class="value-grid">
-          <div class="value-card">
-            <h3>Fix identity drift</h3>
-            <p>Keep users and groups consistent across directories and SaaS tools.</p>
-          </div>
-          <div class="value-card">
-            <h3>Make onboarding predictable</h3>
-            <p>New starters get the right access based on clear rules, not memory.</p>
-          </div>
-          <div class="value-card">
-            <h3>Reduce operational risk</h3>
-            <p>Know who has access to what, and why, with a reviewable trail.</p>
-          </div>
-        </div>
-        <div class="section-cta">
-          <a href="/product" class="text-link">Explore the platform</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Who it's for -->
-    <section class="section">
-      <div class="container">
-        <h2>Built for modern SMBs, not enterprises</h2>
-        <p>
-          Tarid is designed for organisations that rely on Microsoft 365 or Google Workspace, use multiple SaaS tools,
-          and need governance that fits their size and pace—not a multi‑year IAM project.
-        </p>
-        <div class="value-grid">
-          <div class="value-card">
-            <h3>IT‑lean teams</h3>
-            <p>Keep identity hygiene strong without a dedicated IAM team.</p>
-          </div>
-          <div class="value-card">
-            <h3>Founders &amp; ops leaders</h3>
-            <p>Fewer access surprises and less manual clean‑up.</p>
-          </div>
-          <div class="value-card">
-            <h3>Security‑conscious teams</h3>
-            <p>Stronger governance without enterprise‑grade overhead.</p>
-          </div>
-        </div>
-        <div class="section-cta">
-          <a href="/solutions" class="text-link">See real use cases</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reassurance -->
-    <section class="section">
-      <div class="container">
-        <h2>A practical layer, not a new source of truth</h2>
-        <p>
-          Tarid doesn’t replace your identity providers. It connects to them, reconciles what’s already there,
-          and orchestrates changes safely across your environment.
-        </p>
-        <div class="section-cta">
-          <a href="/product" class="text-link">Learn how Tarid works</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <div class="logo-wrap">
-          <img src="/logo-tarid.svg" alt="Tarid logo" />
-          <span class="logo-text">Tarid</span>
-        </div>
-        <p>Identity orchestration &amp; governance for modern SMBs.</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4>Product</h4>
-          <a href="/product">Overview</a>
-          <a href="/solutions">Use cases</a>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <a href="/security">Security</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
     </div>
+</section>
+
+<section id="product">
+
+    <h2>Why teams choose Tarid</h2>
+
+    <p class="section-subtitle">
+        A practical identity governance layer for SMBs using Google Workspace, Microsoft Entra ID, and SaaS applications.
+    </p>
+
+    <div class="value-grid">
+
+        <div class="value-card">
+            <div class="value-title">
+                Built on your existing identity stack
+            </div>
+
+            <div class="value-body">
+                Tarid works with the identity systems you already trust. 
+                Instead of replacing your identity provider, Tarid connects and orchestrates identity across your environment.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">
+                Identity reconciliation and mapping
+            </div>
+
+            <div class="value-body">
+                Detect identity drift, map users across systems, and maintain policy-driven consistency between directories, SaaS platforms, and internal workflows.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">
+                Human-reviewed automation
+            </div>
+
+            <div class="value-body">
+                Automate onboarding, provisioning, and access changes safely with approval checkpoints, audit visibility, and human-in-the-loop confirmation flows.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="pricing">
+
+    <h2>Simple, transparent pricing</h2>
+
+    <p class="section-subtitle">
+        Choose the plan that fits your organisation’s identity needs.
+    </p>
+
+    <div class="pillars-grid">
+
+        <div class="pillar">
+            <div class="pillar-label">SMB</div>
+            <div class="pillar-title">£99 / month</div>
+
+            <div class="pillar-body">
+                <strong>Core Identity Platform</strong><br>
+                • Authentication<br>
+                • Basic Policies<br>
+                • Basic Onboarding<br>
+                • 10 Automated Flows<br>
+                • Audit Logs: 30 days<br>
+                • DB Isolation: Pooled<br><br>
+
+                <strong>Support</strong><br>
+                • Tier 3 Support<br>
+                • Email + FAQ
+            </div>
+        </div>
+
+        <div class="pillar">
+            <div class="pillar-label">Business</div>
+            <div class="pillar-title">£199 / month</div>
+
+            <div class="pillar-body">
+                <strong>Everything in SMB, plus:</strong><br>
+                • Full IAM Suite<br>
+                • Policy Engine<br>
+                • Onboarding + Offboarding<br>
+                • Provisioning / De-provisioning<br>
+                • SSO (SAML / OIDC)<br>
+                • 25 Automated Flows<br>
+                • Audit Logs: 90 days<br>
+                • DB Isolation: Pooled<br><br>
+
+                <strong>Support</strong><br>
+                • Tier 2 Support<br>
+                • Email + FAQ + Tips
+            </div>
+        </div>
+
+        <div class="pillar">
+            <div class="pillar-label">Enterprise</div>
+            <div class="pillar-title">£299 / month</div>
+
+            <div class="pillar-body">
+                <strong>Everything in Business, plus:</strong><br>
+                • Advanced Access Controls<br>
+                • Passwordless Authentication<br>
+                • Conditional Access Rules (CAR)<br>
+                • Governance Toolkit<br>
+                • Exportable Logs (365 days)<br>
+                • 50 Automated Flows<br>
+                • SLA Included<br>
+                • DB Isolation: Pooled (Dedicated coming soon)<br><br>
+
+                <strong>Support</strong><br>
+                • Tier 1 Support<br>
+                • Email + FAQ + Tips + Chatbot
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="integrations">
+
+    <h2>Integrations that fit your stack</h2>
+
+    <p class="section-subtitle">
+        Tarid connects existing identity sources and SaaS platforms into one operational identity layer.
+    </p>
+
+    <div class="value-grid">
+
+        <div class="value-card">
+            <div class="value-title">Google Workspace</div>
+            <div class="value-body">
+                Sync users, groups, and access policies with your Google organisation.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">Microsoft Azure AD</div>
+            <div class="value-body">
+                Integrate with Azure AD for identity, SSO, provisioning, and policy alignment.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">Microsoft 365</div>
+            <div class="value-body">
+                Coordinate access across Teams, Outlook, SharePoint, and related services.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">GitHub</div>
+            <div class="value-body">
+                Align developer access with onboarding, offboarding, and organisational policy.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">Slack</div>
+            <div class="value-body">
+                Maintain workspace access consistency and automate membership management safely.
+            </div>
+        </div>
+
+        <div class="value-card">
+            <div class="value-title">Custom Integrations</div>
+            <div class="value-body">
+                Use Tarid’s API to connect internal systems, business workflows, and bespoke applications.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="solutions">
+
+    <h2>The Tarid platform</h2>
+
+    <p class="section-subtitle">
+        Three practical pillars for orchestrating identity safely across existing systems.
+    </p>
+
+    <div class="pillars-grid">
+
+        <div class="pillar">
+            <div class="pillar-label">Pillar 1</div>
+
+            <div class="pillar-title">
+                Authenticate
+            </div>
+
+            <div class="pillar-body">
+                Standards-based authentication and SSO flows built on top of your existing identity providers, including Google Workspace and Microsoft Entra ID. 
+                Tarid coordinates identity flows without becoming your primary source of truth.
+            </div>
+        </div>
+
+        <div class="pillar">
+            <div class="pillar-label">Pillar 2</div>
+
+            <div class="pillar-title">
+                Onboard
+            </div>
+
+            <div class="pillar-body">
+                Guide users through onboarding and lifecycle workflows with identity confirmation, approval checkpoints, and policy-aware provisioning across connected systems.
+            </div>
+        </div>
+
+        <div class="pillar">
+            <div class="pillar-label">Pillar 3</div>
+
+            <div class="pillar-title">
+                Control
+            </div>
+
+            <div class="pillar-body">
+                Enforce consistent access policies, detect identity drift, review access changes, and maintain governance visibility across your SaaS environment.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="resources-band" id="resources">
+
+    <div class="resources-inner">
+
+        <div>
+            <div class="resource-block-title">
+                Getting started
+            </div>
+
+            <a href="#contact" class="resource-link">
+                Share your current identity stack
+            </a>
+        </div>
+
+        <div>
+            <div class="resource-block-title">
+                For technical teams
+            </div>
+
+            <span style="font-size:0.9rem;color:var(--neutral-500);">
+                API and integration documentation coming soon.
+            </span>
+        </div>
+
+        <div>
+            <div class="resource-block-title">
+                For leadership
+            </div>
+
+            <span style="font-size:0.9rem;color:var(--neutral-500);">
+                Reduce operational identity risk without rebuilding your stack.
+            </span>
+        </div>
+
+    </div>
+</div>
+
+<section id="company">
+
+    <h2>About Tarid</h2>
+
+    <p class="section-subtitle">
+        Tarid is built for SMBs that need reliable identity governance across growing SaaS environments.
+    </p>
+
+    <p style="font-size:0.95rem;color:var(--neutral-700);max-width:48rem;">
+        Modern organisations rarely operate from a single identity source. 
+        Tarid helps teams coordinate identity across Google Workspace, Microsoft Entra ID, and business applications by reconciling identity drift, mapping users consistently, and enforcing policy-driven workflows. 
+        We focus on safe automation, operational visibility, and human-reviewed controls that fit naturally into existing environments.
+    </p>
+
+</section>
+
+<section id="contact">
+
+    <h2>Get in touch</h2>
+
+    <p class="section-subtitle">
+        Tell us about your environment and we’ll follow up with practical integration and governance options.
+    </p>
+
+    <p style="font-size:0.95rem;color:var(--neutral-700);margin-bottom:0.3rem;">
+        Email:
+        <a href="mailto:info@tarid.uk" style="color:var(--primary);text-decoration:none;">
+            info@tarid.uk
+        </a>
+    </p>
+
+</section>
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+            <div style="font-weight:700;margin-bottom:0.4rem;">
+                Tarid
+            </div>
+
+            <div>
+                Identity orchestration & governance for modern SMBs.
+            </div>
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <span>Platform</span>
+                <a href="#product">Overview</a>
+                <a href="#solutions">Capabilities</a>
+            </div>
+
+            <div>
+                <span>Company</span>
+                <a href="#company">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div>
+                <span>Legal</span>
+                <span>© 2026 Tarid</span>
+            </div>
+
+        </div>
+    </div>
+
     <div class="footer-bottom">
-      <p>© 2026 Tarid. Built for teams that need dependable identity governance without enterprise complexity.</p>
+        Built for teams that need dependable identity governance without enterprise complexity.
     </div>
-  </footer>
 
-  <!-- HubSpot -->
-  <script
+</footer>
+
+<script
     type="text/javascript"
     id="hs-script-loader"
     async
     defer
     src="//js-eu1.hs-scripts.com/148351601.js">
-  </script>
+</script>
+
+</body>
+</html>
